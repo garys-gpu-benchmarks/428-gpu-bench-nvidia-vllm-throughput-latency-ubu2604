@@ -23,7 +23,7 @@ sweep:
     smoke: 2
     baseline: 8
     extended: 8
-  request_rate: inf
+  request_rate: true
 thresholds:
   output_token_throughput_tokens_s_min: 0.0
   time_to_first_token_p50_p95_p99_ms_min: 0.0
