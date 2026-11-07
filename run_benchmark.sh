@@ -17,12 +17,11 @@ capture_benchmark_run_command_submitted "$@"
 
 usage() {
   cat <<'USAGE'
+
 Usage: bash run_benchmark.sh [OPTIONS]
 
 Workload Name:          vLLM Inference Throughput & Latency.
 Main Goal:              Measure vLLM serving throughput and latency.
-Validation Objective:   Validates token throughput and request latency from concurrent completions
-                        on the real vLLM server.
 Command Tools Executed: Start python -m vllm.entrypoints.openai.api_server on port 8000, then run
                         scripts/benchmark_serving.py.
 
